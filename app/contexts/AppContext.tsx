@@ -22,7 +22,7 @@ interface AppProviderProps {
 
 export function AppProvider({ children }: AppProviderProps) {
   const [theme, setTheme] = useState<Theme>('light');
-  const [language, setLanguage] = useState<Language>('zh');
+  const [language, setLanguage] = useState<Language>('en');
 
   useEffect(() => {
     // 从 localStorage 读取保存的设置
